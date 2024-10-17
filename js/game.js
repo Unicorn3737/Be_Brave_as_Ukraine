@@ -22,6 +22,7 @@ class Game {
     this.gameLoopFrequency = 1000 / 60;
     this.counter = 0;
     this.verka = new Audio("sounds/verka.mp3");
+    this.verka.volume = 0.1;
   }
   start() {
     this.verka.play();
