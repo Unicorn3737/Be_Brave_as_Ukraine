@@ -5,24 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>Island Racer</title>
+    <title>Be Brave as Ukraine</title>
   </head>
   <body>
     <main>
       <!-- #game-intro is initially shown on the game start screen -->
       <div id="game-intro">
-        <img src="./images/logo.png" alt="" class="logo-img" />
+        <img src="./images/Vera.PNG" alt="" class="Vera" />
         <br />
-        <button id="start-button">Start Game</button>
-        <p>Use the left and right arrow to control the car!</p>
+        <button id="start-button">
+          Support
+          <img
+            src="https://a.slack-edge.com/production-standard-emoji-assets/14.0/google-large/1f1fa-1f1e6.png"
+          />
+        </button>
+        <p>THIS IS VERA!</p>
+        <p>
+          AND SHE IS UKRAINIAN WHICH IS SUPPORT UKRAINE!<img
+            src="./images/power.PNG"
+          />
+        </p>
+        <p>LET'S HELP HER TO MAKE IT</p>
+        <p>
+          Use the left and right arrow to control the gamer and space for
+          shooting!
+        </p>
         <img src="./images/arrows.png" alt="" class="arrows-img" />
       </div>
 
       <div id="game-container">
         <div>
           <h2>Stats</h2>
-          <p>Score: <span id="score">0</span></p>
-          <p>Lives: <span id="lives">3</span></p>
+          <p>Orks: <span id="orks">0</span></p>
+          <p>Drones: <span id="drones">0</span></p>
+          <p>Chances: <span id="chances">3</span></p>
         </div>
         <!-- #game-screen is initially hidden using CSS style display: none -->
         <div id="game-screen"></div>
@@ -30,13 +46,30 @@
 
       <!-- #game-end is initially hidden using CSS style display: none -->
       <div id="game-end">
-        <img src="./images/logo.png" alt="" class="logo-img" />
-        <h1>Game Over</h1>
+        <img src="./images/Winner.png" alt="" class="Winner-img" />
+        <h1>Be Brave as Ukraine!</h1>
         <br />
-        <button id="restart-button">Restart</button>
+        <button id="restart-button">Try again</button>
+        <div>
+          <h2>Stats</h2>
+          <p>Orks: <span id="orks/end"></span></p>
+          <p>Drones: <span id="drones/end"></span></p>
+          <p>Chances: <span id="chances">0</span></p>
+        </div>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Sixtyfour+Convergence&display=swap"
+          rel="stylesheet"
+        />
+        <h3>Game creator:</h3>
+        <h4>Turek Anna</h4>
+        <h5>Illustrator:</h5>
+        <h6>Turek Sofia (my daughter)</h6>
       </div>
     </main>
 
+    <script type="text/javascript" src="js/projectile.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/obstacle.js"></script>
     <script type="text/javascript" src="js/game.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>

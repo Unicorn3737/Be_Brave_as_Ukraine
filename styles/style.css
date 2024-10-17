@@ -1,6 +1,8 @@
 body {
   padding: 0;
   text-align: center;
+  margin: 0;
+  width: 100vw;
 }
 
 #game-intro {
@@ -20,9 +22,9 @@ body {
   padding: 20px 0px;
   overflow: hidden;
   position: relative;
-  background-image: url(../images/road.png);
+  background-image: url(../images/backstage.jpg);
   background-size: cover;
-  animation: slide 5s linear infinite;
+  animation: none;
 }
 
 @keyframes slide {
@@ -39,6 +41,62 @@ body {
 
 #game-end {
   display: none;
+  align-content: top;
+  position: relative;
+  background-image: url(../images/lastBackground.jpg);
+  background-size: cover;
+  margin: 0;
+
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#game-container {
+  display: flex;
+  width: 100vw;
+  padding: 10px 0px;
+  justify-content: center;
+  align-content: center;
+}
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-family: "Verdana";
+  font-size: 18px;
+}
+h3 {
+  text-decoration: underline;
+  font-style: italic;
+  color: #990c0c;
+  letter-spacing: 1px;
+  font-family: "Londrina Sketch";
+  font-size: 26px;
+}
+h1 {
+  font-family: "Londrina Sketch";
+  font-size: 40px;
+  color: #e20c0cc0;
+}
+h5 {
+  text-decoration: underline;
+  font-style: italic;
+  color: #990c0c;
+  letter-spacing: 1px;
+  font-family: "Londrina Sketch";
+  font-size: 26px;
+}
+
+#game-end div {
+  margin-bottom: 29px;
+}
+
+.Winner-img {
+  width: 250px;
+  padding: 20px 0px;
+  margin-top: 0px;
 }
 
 .game-intro p {
@@ -46,7 +104,7 @@ body {
   font-family: "Verdana";
 }
 
-.logo-img {
+.Vera-img {
   width: 350px;
 }
 
@@ -56,11 +114,12 @@ body {
 
 body button {
   font-size: 30px;
-  background-color: #870007;
-  color: #fff;
+  background-color: #2f31a5;
+  color: #f0ec0c;
   padding: 20px 40px;
-  border: 0;
-  box-shadow: 0;
+  border: 100;
+  box-shadow: 100;
   border-radius: 5px;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
