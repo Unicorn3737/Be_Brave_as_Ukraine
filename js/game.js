@@ -93,6 +93,7 @@ class Game {
       console.log("you loos");
       this.gameIsOver = true;
       this.player.element.remove();
+      this.verka.pause();
       this.obstacles.forEach((oneObstacle) => {
         oneObstacle.element.remove();
       });
