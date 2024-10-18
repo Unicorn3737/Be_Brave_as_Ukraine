@@ -104,7 +104,7 @@ class Game {
       this.dronesElementEnd.innerText = this.drones;
     }
     if (this.counter % 180 === 0) {
-      this.obstacles.push(new Obstacle("images/ork.png", "ork"));
+      this.obstacles.push(new Obstacle("images/ork.PNG", "ork"));
     }
     if (this.counter % 250 === 0) {
       this.obstacles.push(new Obstacle("images/Dron.PNG", "Dron"));
